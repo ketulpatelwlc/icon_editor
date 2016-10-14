@@ -201,7 +201,7 @@ function addAccessors($scope) {
     function addImage(imageName, minScale, maxScale) {
         var coord = getRandomLeftTop();
 
-        fabric.Image.fromURL('../assets/' + imageName, function (img) {
+        fabric.Image.fromURL('assets/' + imageName, function (img) {
 
             var oImg = img.set({
                 left: 75,
@@ -309,7 +309,7 @@ function addAccessors($scope) {
 
         var coord = getRandomLeftTop();
 
-        fabric.loadSVGFromURL('../assets/' + shapeName + '.svg', function (objects, options) {
+        fabric.loadSVGFromURL('assets/' + shapeName + '.svg', function (objects, options) {
 
             var loadedObject = fabric.util.groupSVGElements(objects, options);
 
